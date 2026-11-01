@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('UCC PAW APP');
+    return view('ucc-paw-app');
 });
