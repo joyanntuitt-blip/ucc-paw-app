@@ -30,7 +30,7 @@
         <a href="{{ route('social.media') }}" class="menu-card">📱 Social Media</a> <!--Link to the social media page-->
     </div>
 
-    <p> Test 1 </p>
+    <p> Test 1 - Addmission </p>
 
     <!-- Email FAB -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Student Enquiry" class="email-fab" title="Email HOD">✉️</a>
