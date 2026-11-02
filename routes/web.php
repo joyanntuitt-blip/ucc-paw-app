@@ -8,5 +8,5 @@ Route::get('/', function () {
 
 // Route Pathway to the faculty/staff directory
 Route::get('/faculty-directory', function () { 
-    return view('faculty-directory'); // Points to your faculty-directory.blade.php file
+    return view('faculty-directory'); // Points user to the faculty-directory.blade.php file
     })->name('faculty.directory'); 
