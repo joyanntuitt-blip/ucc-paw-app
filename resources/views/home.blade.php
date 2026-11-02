@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     @PwaHead  <!-- Injects the PWA manifest reference strings automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCC IT Web App</title>
+    <title>UCC App</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
         .header { background: #1E3A8A; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 30px; }
@@ -23,7 +24,7 @@
 
     <!--Menu bar for users-->
     <div class="menu-grid">
-        <a href="{{ route('home') }}" class="menu-card">👥 Home</a> <!--Link to the home page-->
+        <a href="{{ route('home') }}" class="menu-card">🏡 Home</a> <!--Link to the home page-->
         <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a> <!--Link to the faculty directory page-->
         <a href="{{ route('courses') }}" class="menu-card">📚 Courses</a> <!--Link to the courses page-->
         <a href="{{ route('admissions') }}" class="menu-card">🎓 Admissions</a> <!--Link to the admissions page-->
@@ -34,6 +35,7 @@
 
     <!-- Email FAB -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Student Enquiry" class="email-fab" title="Email HOD">✉️</a>
-
+    
+ @RegisterServiceWorkerScript <!-- Registers background caching functionality -->
 </body>
 </html>
