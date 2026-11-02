@@ -27,7 +27,7 @@
 
     <!--Menu bar for users-->
     <div class="menu-grid">
-        <a href="{{ route('faculty-directory') }}" class="menu-card">👥 Faculty/Staff Directory</a>
+        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a>
         <a href="#" class="menu-card">📚 Courses</a>
         <a href="#" class="menu-card">🎓 Admissions</a>
         <a href="#" class="menu-card">📱 Social Media</a>
