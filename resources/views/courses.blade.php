@@ -23,11 +23,14 @@
 
     <!--Menu bar for users-->
     <div class="menu-grid">
-        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a>
-        <a href="#" class="menu-card">📚 Courses</a>
-        <a href="#" class="menu-card">🎓 Admissions</a>
-        <a href="#" class="menu-card">📱 Social Media</a>
+        <a href="{{ route('home') }}" class="menu-card">👥 Home</a> <!--Link to the home page-->
+        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a> <!--Link to the faculty directory page-->
+        <a href="{{ route('courses') }}" class="menu-card">📚 Courses</a> <!--Link to the courses page-->
+        <a href="{{ route('admissions') }}" class="menu-card">🎓 Admissions</a> <!--Link to the admissions page-->
+        <a href="{{ route('social.media') }}" class="menu-card">📱 Social Media</a> <!--Link to the social media page-->
     </div>
+
+    <p> Test 3 </p>
 
     <!-- Email FAB -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Student Enquiry" class="email-fab" title="Email HOD">✉️</a>
