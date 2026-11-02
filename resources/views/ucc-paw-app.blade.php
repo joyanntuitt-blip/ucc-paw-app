@@ -13,14 +13,17 @@
         .email-fab { position: fixed; bottom: 30px; right: 30px; background: #EF4444; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
     </style>
 </head>
+
 <body>
 
+    <!--Header to display the name of the University-->
     <div class="header">
-        <h1>UCC PAW APP</h1>
+        <h1>University of the Commonwealth Caribbean</h1>
     </div>
 
+    <!--Menu bar for users-->
     <div class="menu-grid">
-        <a href="#" class="menu-card">👥 Faculty/Staff Directory</a>
+        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a>
         <a href="#" class="menu-card">📚 Courses</a>
         <a href="#" class="menu-card">🎓 Admissions</a>
         <a href="#" class="menu-card">📱 Social Media</a>

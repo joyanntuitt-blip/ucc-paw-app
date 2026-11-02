@@ -7,3 +7,16 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+/* Make links and buttons easy to tap */
+nav a, button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: .75rem 1rem;
+}
+ 
+/* Only add hover effects on devices that can hover */
+@media (hover: hover) {
+  .book:hover { box-shadow: 0 4px 12px rgb(0 0 0 / .15); }
+}
