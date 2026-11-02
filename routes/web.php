@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+    })->name('home'); 
 
 // Route Pathway to the faculty/staff directory page
 Route::get('/faculty-directory', function () { 
