@@ -60,7 +60,7 @@ body {
    DASHBOARD SUB-NAVIGATION ROW LAYOUT
    ========================================== */
 .nav-row {
-    background: white;
+    background: rgb(241, 237, 18);
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 25px;
@@ -214,9 +214,9 @@ body {
    ASSIGNMENT GLOBAL FLOATING ACTION BUTTON (FAB)
    ========================================== */
 .email-fab {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+    position: fixed !important; /* Fixed position anchors it relative to the viewport */
+    bottom: 30px !important;
+    right: 30px !important;
     background: #EF4444; /* Bright Red Notification Accent */
     color: white;
     width: 60px;
@@ -236,163 +236,3 @@ body {
     transform: scale(1.1);
 }
 
-/*
-@import 'tailwindcss';
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-
-/* Make links and buttons easy to tap 
-nav a, button {
-  min-height: 44px;
-  min-width: 44px;
-  padding: .25rem 1rem;
-}
-
- 
-/* Only add hover effects on devices that can hover 
-@media (hover: hover) {
-  .book:hover { box-shadow: 0 4px 12px rgb(0 0 0 / .15); }
-}
-
-body { 
-  font-family: Arial, sans-serif; 
-  background-color: #f4f6f9; 
-  margin: 0; 
-  padding: 20px; 
-}
-
-.header { 
-  background: #1E3A8A; 
-  color: white; 
-  padding: 20px; 
-  text-align: center; 
-  border-radius: 8px; 
-  margin-bottom: 30px; 
-}
-
-.menu-grid { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 20px; 
-  max-width: 1000px; 
-  margin: 0 auto; 
-}
-
-.menu-card {
-  background: white;
-  padding: 30px; 
-  text-align: center; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-  text-decoration: none; 
-  color: #333; 
-  font-weight: bold; 
-  font-size: 1.2rem; 
-  transition: transform 0.2s; 
-}
-        
-.menu-card:hover { 
-  transform: translateY(-5px); 
-  background: #fdfdfd; 
-}
-
-.email-fab { 
-  position: fixed;
-  bottom: 30px; 
-  right: 30px; 
-  background: #EF4444; 
-  color: white; 
-  width: 60px; 
-  height: 60px; 
-  border-radius: 50%; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  font-size: 24px; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
-  text-decoration: none; 
-}
-
-
-p{
-  margin: 0 0 10px 0; 
-  font-weight: bold; 
-  font-size: 1.1rem; 
-  color: #333;
-}
-
-.faculty-member{
-  background: white; 
-  padding: 20px; 
-  border-radius: 8px; 
-  margin-bottom: 15px; 
-  display: flex; 
-  align-items: center; 
-  gap: 15px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.faculty-photo{
-  width: 70px; 
-  height: 70px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  border: 2px solid #111b35;
-}
-
-.telephone{
-  background-color: #10B981; 
-  color: white; 
-  padding: 6px 12px; 
-  border-radius: 4px; 
-  text-decoration: none; 
-  font-weight: bold; 
-  font-size: 0.9rem; 
-  margin-right: 10px;
-}
-
-.email{
-   background-color: #3B82F6; 
-   color: white; 
-   padding: 6px 12px; 
-   border-radius: 4px; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size: 0.9rem;
-}
-
-
-/*body { 
-  font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
-  .container { max-width: 800px; margin: 0 auto; }
-  .back-btn { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #1E3A8A; font-weight: bold; }
-        h1 { color: #1E3A8A; text-align: center; margin-bottom: 30px; }
-        
-        Grid layout for directory profiles 
-        .directory-grid { display: flex; flex-direction: column; gap: 20px; }
-        
-        /* Card design containing all required structural properties 
-        .faculty-card { display: flex; align-items: center; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); gap: 20px; }
-        .faculty-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 3px solid #1E3A8A; }
-        .faculty-info { flex-grow: 1; }
-        .faculty-name { margin: 0 0 5px 0; color: #333; font-size: 1.3rem; font-weight: bold; }
-        .faculty-title { margin: 0 0 10px 0; color: #666; font-size: 0.95rem; font-style: italic; }
-        
-        /* Contact Action Communication Elements 
-        .action-buttons { display: flex; gap: 10px; }
-        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
-        .btn-call { background-color: #10B981; color: white; }
-        .btn-call:hover { background-color: #059669; }
-        .btn-email { background-color: #3B82F6; color: white; }
-        .btn-email:hover { background-color: #2563EB; }
-
-        /* Assignment Global Floating Email FAB 
-        .email-fab { position: fixed; bottom: 30px; right: 30px; background: #EF4444; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.2s; }
-        .email-fab:hover { transform: scale(1.1); }*/

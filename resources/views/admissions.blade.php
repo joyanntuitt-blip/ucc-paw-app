@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCC IT Web App</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
-        .header { background: #1E3A8A; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 30px; }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .menu-card { background: white; padding: 30px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; transition: transform 0.2s; }
-        .menu-card:hover { transform: translateY(-5px); background: #fdfdfd; }
-        .email-fab { position: fixed; bottom: 30px; right: 30px; background: #EF4444; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
-    </style>
+    <title>Faculty and Staff Members</title>
+    
+    <!-- Injects your single unified app.css file -->
+    @vite(['resources/css/app.css'])
+    @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 </head>
-
 <body>
 
     <!--Header to display the name of the University-->
@@ -21,19 +16,28 @@
         <h1>University of the Commonwealth Caribbean</h1>
     </div>
 
-    <!--Menu bar for users-->
-    <div class="menu-grid">
-        <a href="{{ route('home') }}" class="menu-card">🏡 Home</a> <!--Link to the home page-->
-        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a> <!--Link to the faculty directory page-->
-        <a href="{{ route('courses') }}" class="menu-card">📚 Courses</a> <!--Link to the courses page-->
-        <a href="{{ route('admissions') }}" class="menu-card">🎓 Admissions</a> <!--Link to the admissions page-->
-        <a href="{{ route('social.media') }}" class="menu-card">📱 Social Media</a> <!--Link to the social media page-->
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Dashboard Navigation Row Links -->
+        <div class="nav-row">
+            <a href="/" class="nav-link">🏡 Home</a><!--Link to the home page-->
+            <a href="/faculty-directory" class="nav-link">👥 Faculty Directory</a> <!--Link to the faculty directory page-->
+            <a href="/courses" class="nav-link">📚 Courses</a> <!--Link to the courses page-->
+            <a href="/admissions" class="nav-link active">🎓 Admissions</a> <!--Link to the admissions page-->
+            <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
+        </div>
+
+        <p class="intro-text">
+            The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
+        </p>
     </div>
+    
+    <!-- Assignment Target Email Floating Action Button to HOD -->
+    <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
 
-    <p> Test 1 - Addmission </p>
-
-    <!-- Email FAB -->
-    <a href="mailto:hod.it@ucc.edu.jm?subject=Student Enquiry" class="email-fab" title="Email HOD">✉️</a>
-
+    @RegisterServiceWorkerScript
 </body>
 </html>
+
+
