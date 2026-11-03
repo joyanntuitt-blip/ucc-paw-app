@@ -19,7 +19,7 @@ return [
     */
 
     'manifest' => [
-        'name' => 'UCC PWA App',
+        'name' => 'University of the Commonwealth App',
         'short_name' => 'UCC App',
         'background_color' => '#ffffff',
         'theme_color' => '#1E3A8A', // Official UCC Branding Blue color

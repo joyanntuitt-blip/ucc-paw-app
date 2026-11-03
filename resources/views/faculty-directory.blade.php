@@ -6,15 +6,8 @@
     
     <title>Faculy/Staff Directory</title>
     
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
-        .header { background: #1E3A8A; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 30px; }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        .menu-card { background: white; padding: 30px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; transition: transform 0.2s; }
-        .menu-card:hover { transform: translateY(-5px); background: #fdfdfd; }
-        .email-fab { position: fixed; bottom: 30px; right: 30px; background: #EF4444; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
-    </style>
-
+    <!--Links the app.css file to the webage-->
+    @vite(['resources/css/app.css'])
 </head>
 
 <body>
@@ -33,10 +26,34 @@
         <a href="{{ route('social.media') }}" class="menu-card">📱 Social Media</a> <!--Link to the social media page-->
     </div>
 
-    <p> Test 2 - Faculty </p>
+    <h1> Faculty and Staff Members</h1>
+    <p>The University of the Commonwealth Caribbean is the home to many lecturers ans staff with various ranges of skills and expetise in their field areas. </p>
 
-    <!-- Email FAB -->
-    <a href="mailto:hod.it@ucc.edu.jm?subject=Student Enquiry" class="email-fab" title="Email HOD">✉️</a>
+    <!-- Class for the faculty director-->
+    <div class="directory-grid">
+    
+        <!-- Faculty Member 1 Card Layout and Profile -->
+        <div class="faculty-member">
+            
+            <!-- Faculty Photo -->
+            <img src="/images/avatar-placeholder.png" alt="Otis Osborne" class="faculty-photo">
+            
+            <div class="info-block">
+                <p> Name: Otis Osborne </p>
+                
+                <!-- Click-to-Dial Action for Faculty Member-->
+                <a href="tel:01276543" class="telephone" title="Call Mr. Osborne">📞 Call Now</a>
+                
+                <!-- Click-to-Email Action for Faculty Member -->
+                <a href="mailto:hod.it@ucc.edu.jm?subject=IT Department & Courses Enquiry" class="email" title="Email Mr. Osborne"> ✉️ Email</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    
 
 </body>
 </html>
