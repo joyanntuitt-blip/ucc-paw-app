@@ -3,56 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty and Staff Members</title>
     
-    <title>Faculy/Staff Directory</title>
-    
-    <!--Links the app.css file to the webage-->
-    <link rel="stylesheet" href="resources/css/app.css">
+    <!-- Injects your single unified app.css file -->
+    @vite(['resources/css/app.css'])
+    @PwaHead
 </head>
-
 <body>
 
-    <!--Header to display the name of the University-->
+    <!-- Unified Header Banner -->
     <div class="header">
         <h1>University of the Commonwealth Caribbean</h1>
+        <p>Faculty and Staff Directory</p>
     </div>
 
-    <!--Menu bar for users-->
-    <div class="menu-grid">
-        <a href="{{ route('home') }}" class="menu-card">🏡 Home</a> <!--Link to the home page-->
-        <a href="{{ route('faculty.directory') }}" class="menu-card">👥 Faculty/Staff Directory</a> <!--Link to the faculty directory page-->
-        <a href="{{ route('courses') }}" class="menu-card">📚 Courses</a> <!--Link to the courses page-->
-        <a href="{{ route('admissions') }}" class="menu-card">🎓 Admissions</a> <!--Link to the admissions page-->
-        <a href="{{ route('social.media') }}" class="menu-card">📱 Social Media</a> <!--Link to the social media page-->
-    </div>
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <!-- Dashboard Navigation Row Links -->
+        <div class="nav-row">
+            <a href="/" class="nav-link">🏡 Home</a>
+            <a href="/faculty-directory" class="nav-link active">👥 Faculty Directory</a>
+            <a href="/courses" class="nav-link">📚 Courses</a>
+            <a href="/admissions" class="nav-link">🎓 Admissions</a>
+            <a href="/social-media" class="nav-link">📱 Social Media</a>
+        </div>
 
-    <h1> Faculty and Staff Members</h1>
-    <p>The University of the Commonwealth Caribbean is the home to many lecturers ans staff with various ranges of skills and expetise in their field areas. </p>
+        <p class="intro-text">
+            The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
+        </p>
 
-    <!-- Class for the faculty diretory-->
-    <div class="directory-grid">
-    
-        <!-- Faculty Member 1 Card Layout and Profile -->
-        <div class="faculty-member">
+        <!-- Directory Flex Grid -->
+        <div class="directory-grid">
             
-            <!-- Faculty Photo -->
-            <img src="/images/avatar-placeholder.png" alt="Otis Osborne" class="faculty-photo">
-            
-            <div class="info-block">
-                <p> Name: Otis Osborne </p>
+            <!-- Faculty Member Card: Otis Osborne -->
+            <div class="faculty-member">
+                <img src="/images/avatar-placeholder.png" alt="Otis Osborne" class="faculty-photo">
                 
-                <!-- Click-to-Dial Action for Faculty Member-->
-                <a href="tel:01276543" class="telephone" title="Call Mr. Osborne">📞 Call Now</a>
-                
-                <!-- Click-to-Email Action for Faculty Member -->
-                <a href="mailto:hod.it@ucc.edu.jm?subject=IT Department & Courses Enquiry" class="email" title="Email Mr. Osborne"> ✉️ Email</a>
+                <div class="info-block">
+                    <p class="info-name">Mr. Otis Osborne</p>
+                    <p class="info-role">HOD / IT Department Lecturer</p>
+                    
+                    <div class="action-group">
+                        <a href="tel:01276543" class="telephone" title="Call Mr. Osborne">📞 Call Now</a>
+                        <a href="mailto:hod.it@ucc.edu.jm?subject=IT Department Enquiry" class="email" title="Email Mr. Osborne">✉️ Email</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Feel free to duplicate the faculty-member block right here for more professors! -->
+
         </div>
     </div>
 
+    <!-- Assignment Target Email Floating Action Button to HOD -->
+    <a href="mailto:hod.it@ucc.edu.jm?subject=IT Department Student Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
 
-
-    
-
+    @RegisterServiceWorkerScript
 </body>
 </html>

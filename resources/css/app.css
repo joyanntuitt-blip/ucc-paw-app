@@ -4,12 +4,251 @@
 @source '../../storage/framework/views/*.php';
 
 @theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ==========================================
+   GLOBAL BODY & CORE DECORATIVE LAYOUTS
+   ========================================== */
+body {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Center Wrapper for Sub-Pages */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Unified Deep Blue Heading Banner */
+.header {
+    background: #1E3A8A; /* Official UCC Branding Blue */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+/* Sub-page Intro Paragraphs */
+.intro-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   DASHBOARD SUB-NAVIGATION ROW LAYOUT
+   ========================================== */
+.nav-row {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1E3A8A;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #2563EB;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #1E3A8A;
+}
+
+/* ==========================================
+   HOMEPAGE GRID DASHBOARD CARDS
+   ========================================== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+@media (hover: hover) {
+    .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* ==========================================
+   FACULTY DIRECTORY CARDS
+   ========================================== */
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.faculty-member {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.faculty-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1E3A8A;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+}
+
+.info-block p {
+    margin: 0;
+}
+
+.info-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info-role {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 8px !important;
+}
+
+/* Faculty Communication Buttons */
+.action-group {
+    display: flex;
+    gap: 10px;
+}
+
+.telephone, .email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: white;
+    min-height: 40px;
+    transition: background-color 0.2s;
+}
+
+.telephone {
+    background-color: #10B981; /* Green Dial Button */
+}
+
+.telephone:hover {
+    background-color: #059669;
+}
+
+.email {
+    background-color: #3B82F6; /* Blue Email Button */
+}
+
+.email:hover {
+    background-color: #2563EB;
+}
+
+/* ==========================================
+   ASSIGNMENT GLOBAL FLOATING ACTION BUTTON (FAB)
+   ========================================== */
+.email-fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #EF4444; /* Bright Red Notification Accent */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+.email-fab:hover {
+    transform: scale(1.1);
+}
+
+/*
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 
-/* Make links and buttons easy to tap */
+/* Make links and buttons easy to tap 
 nav a, button {
   min-height: 44px;
   min-width: 44px;
@@ -17,7 +256,7 @@ nav a, button {
 }
 
  
-/* Only add hover effects on devices that can hover */
+/* Only add hover effects on devices that can hover 
 @media (hover: hover) {
   .book:hover { box-shadow: 0 4px 12px rgb(0 0 0 / .15); }
 }
@@ -37,6 +276,7 @@ body {
   border-radius: 8px; 
   margin-bottom: 30px; 
 }
+
 .menu-grid { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
