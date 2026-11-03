@@ -7,7 +7,7 @@
     <title>Faculy/Staff Directory</title>
     
     <!--Links the app.css file to the webage-->
-    @vite(['resources/css/app.css'])
+    <link rel="stylesheet" href="resources/css/app.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <h1> Faculty and Staff Members</h1>
     <p>The University of the Commonwealth Caribbean is the home to many lecturers ans staff with various ranges of skills and expetise in their field areas. </p>
 
-    <!-- Class for the faculty director-->
+    <!-- Class for the faculty diretory-->
     <div class="directory-grid">
     
         <!-- Faculty Member 1 Card Layout and Profile -->
@@ -47,7 +47,6 @@
                 <!-- Click-to-Email Action for Faculty Member -->
                 <a href="mailto:hod.it@ucc.edu.jm?subject=IT Department & Courses Enquiry" class="email" title="Email Mr. Osborne"> ✉️ Email</a>
             </div>
-
         </div>
     </div>
 
