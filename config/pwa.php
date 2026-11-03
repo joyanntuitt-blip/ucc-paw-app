@@ -27,12 +27,12 @@ return [
         'description' => 'Access UCC IT Department resource pathways natively.',
         'icons' => [
             [
-                'src' => 'logo.png', // Looks for your app icon file
+                'src' => '/logo.png', // Added leading slash and wrapped inside a multi-dimensional array
                 'sizes' => '512x512',
                 'type' => 'image/png',
             ],
-        ],
-    ],
+        ], 
+    ], 
 
     /*
     |--------------------------------------------------------------------------

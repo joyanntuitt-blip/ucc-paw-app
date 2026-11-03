@@ -214,9 +214,9 @@ body {
    ASSIGNMENT GLOBAL FLOATING ACTION BUTTON (FAB)
    ========================================== */
 .email-fab {
+    left: 30px !important; 
+    right: auto !important; 
     position: fixed !important; /* Fixed position anchors it relative to the viewport */
-    bottom: 30px !important;
-    right: 30px !important;
     background: #EF4444; /* Bright Red Notification Accent */
     color: white;
     width: 60px;
