@@ -155,9 +155,6 @@
         </div>
     </div>
 
-    <!-- Assignment Target Email Floating Action Button to HOD -->
-    <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
-
     @RegisterServiceWorkerScript
 </body>
 </html>
