@@ -52,8 +52,8 @@
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "firebase/app";
     import { getAnalytics } from "firebase/analytics";
-    // FIX 1: Imported required functions from the Realtime Database package
-    import { getDatabase, ref, onValue } from "firebase/database"; 
+    // FIX 1: Swapped Realtime Database imports for Cloud Firestore modules
+    import { getFirestore, collection, onSnapshot } from "firebase/firestore"; 
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
@@ -69,53 +69,52 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-    // FIX 2: Initialize the Realtime Database instance using your app
-    const database = getDatabase(app); 
+    // FIX 2: Initialize your Firestore structural reference mapping layer
+    const db = getFirestore(app); 
 
-    // Reference the node pathway directory inside your Realtime Database tree
-    const databaseTargetRef = ref(database, 'resources');
+    // TPoint the collection reference directly to your 'courses' collection
+    const collectionTargetRef = collection(db, 'courses');
 
     const loadingSpinner = document.getElementById('firebase-loading-spinner');
     const dataContainer = document.getElementById('firebase-data-container');
 
-    // Listen to remote changes automatically without page reloads
-    onValue(databaseTargetRef, (snapshot) => {
-        const dataPayload = snapshot.val();
-        
+    // Listen to real-time updates inside your Cloud Firestore collection layout 
+    onSnapshot(collectionTargetRef, (querySnapshot) => {
         // Toggle element visibility layers smoothly
         loadingSpinner.classList.add('hidden');
         dataContainer.classList.remove('hidden');
         dataContainer.innerHTML = '';
 
-        if (dataPayload) {
-            // Iterate through matching node entries and map layout structures dynamically
-            Object.keys(dataPayload).forEach(entryKey => {
-                const entryValue = dataPayload[entryKey];
-                const listItem = document.createElement('li');
+        if (!querySnapshot.empty) {
+            // Iterate through every document entry mapping inside the collection tree
+            querySnapshot.forEach((doc) => {
+                const entryKey = doc.id; // Document identifier name
+                const docData = doc.data(); // Document contents object
                 
+                //Dynamically reads fields from the Database schema. 
+                const entryValue = docData.code || docData.name || JSON.stringify(docData);
+
+                
+                const listItem = document.createElement('li');
                 listItem.className = "p-3 bg-gray-50 rounded-lg border border-gray-100 text-gray-700 flex justify-between items-center hover:bg-gray-100 transition-all duration-200";
                 listItem.innerHTML = `
                     <span class="font-medium text-gray-900">${entryKey}</span>
-                    <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">${entryValue.value !== undefined ? entryValue.value : entryValue}</span>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">${entryValue}</span>
                 `;
                 dataContainer.appendChild(listItem);
             });
         } else {
-            dataContainer.innerHTML = `<li class="text-gray-400 italic p-3">No pathway dataset records are currently mapped in this reference tree.</li>`;
+            dataContainer.innerHTML = `<li class="text-gray-400 italic p-3">No pathway dataset records are currently mapped in this Firestore collection.</li>`;
         }
     }, (error) => {
-        console.error("Firebase Database Sync Error:", error);
-        loadingSpinner.innerHTML = `<span class="text-red-600 font-medium">⚠️ Connection Refused: Check your Firebase Database security rules.</span>`;
+        console.error("Firebase Firestore Sync Error:", error);
+        loadingSpinner.innerHTML = `<span class="text-red-600 font-medium">⚠️ Connection Refused: Check your Cloud Firestore security rules.</span>`;
     });
     </script>
 
-
-    
     <!-- Assignment Target Email Floating Action Button to HOD -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
 
     @RegisterServiceWorkerScript
 </body>
 </html>
-
-
