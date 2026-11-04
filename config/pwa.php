@@ -26,7 +26,11 @@ return [
         'display' => 'standalone', // Removes the web browser address bar to look like a native application shell
         'description' => 'Access UCC IT Department resource pathways natively.',
         'icons' => [
-            [ ],
+            [
+                'src' => '/icon.png', // Keep a standard pointer to avoid validation failure
+                'sizes' => '512x512',
+                'type' => 'image/png',
+            ],
         ], 
     ], 
 
