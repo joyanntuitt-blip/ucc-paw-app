@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 </head>
-<body>
+<body class="bg-gray-50">
 
     <!--Header to display the name of the University-->
     <div class="header">
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Main Content Container -->
-    <div class="container">
+    <div class="container mx-auto px-4">
         
         <!-- Dashboard Navigation Row Links -->
         <div class="nav-row">
@@ -34,7 +34,7 @@
     </div>
 
     <!-- 1. The visual container shell that pulls data from your cloud dashboard layout -->
-    <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 my-4">
+    <div class="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg border border-gray-100 my-4">
         <h3 class="text-xl font-bold mb-4 text-blue-900 flex items-center">
             <span class="mr-2">📁</span> UCC IT Live Resource Pathway Logs
         </h3>
@@ -49,11 +49,10 @@
     <!-- 2. The script handling real-time data sync processes -->
     <script type="module">
 
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
-    // FIX 1: Swapped Realtime Database imports for Cloud Firestore modules
-    import { getFirestore, collection, onSnapshot } from "firebase/firestore"; 
+    // FIX: Changed bare npm package imports to standalone Web CDN links for full browser compatibility
+    import { initializeApp } from "https://gstatic.com";
+    import { getAnalytics } from "https://gstatic.com";
+    import { getFirestore, collection, onSnapshot } from "https://gstatic.com"; 
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
@@ -69,10 +68,9 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-    // FIX 2: Initialize your Firestore structural reference mapping layer
     const db = getFirestore(app); 
 
-    // TPoint the collection reference directly to your 'courses' collection
+    // Point the collection reference directly to your 'courses' collection
     const collectionTargetRef = collection(db, 'courses');
 
     const loadingSpinner = document.getElementById('firebase-loading-spinner');
@@ -91,10 +89,9 @@
                 const entryKey = doc.id; // Document identifier name
                 const docData = doc.data(); // Document contents object
                 
-                //Dynamically reads fields from the Database schema. 
+                // Dynamically reads fields from the Database schema. 
                 const entryValue = docData.code || docData.name || JSON.stringify(docData);
 
-                
                 const listItem = document.createElement('li');
                 listItem.className = "p-3 bg-gray-50 rounded-lg border border-gray-100 text-gray-700 flex justify-between items-center hover:bg-gray-100 transition-all duration-200";
                 listItem.innerHTML = `
