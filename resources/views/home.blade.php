@@ -6,7 +6,7 @@
     <title>Faculty and Staff Members</title>
     
     <!-- Injects your single unified app.css file -->
-    <a href="app.css"></a>
+    @vite(['resources/css/app.css'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 </head>
 <body>
