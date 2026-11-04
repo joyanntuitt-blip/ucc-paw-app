@@ -26,11 +26,7 @@ return [
         'display' => 'standalone', // Removes the web browser address bar to look like a native application shell
         'description' => 'Access UCC IT Department resource pathways natively.',
         'icons' => [
-            [
-                'src' => '/logo.png', // Added leading slash and wrapped inside a multi-dimensional array
-                'sizes' => '512x512',
-                'type' => 'image/png',
-            ],
+            [ ],
         ], 
     ], 
 
