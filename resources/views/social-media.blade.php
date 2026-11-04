@@ -32,6 +32,8 @@
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
     </div>
+
+    
     
     <!-- Assignment Target Email Floating Action Button to HOD -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
