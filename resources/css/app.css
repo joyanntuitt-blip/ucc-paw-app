@@ -44,19 +44,12 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
 
 .header p {
     margin: 10px 0 0 0;
     opacity: 0.9;
     font-size: 1rem;
 }
-
-
 
 
 /* ==========================================
@@ -225,7 +218,7 @@ body {
 }
 
 .admissions-block {
-    background: #1e3a8a; /* Changed from dark grey to UCC Blue for contrast */
+    background: #7d7d7d; /* Changed from dark grey to UCC Blue for contrast */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -236,7 +229,7 @@ body {
 }
 
 .admissions-title {
-    color: #ffffff;
+    color: #0a0af2;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
