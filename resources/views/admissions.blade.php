@@ -38,7 +38,7 @@
             <h1 class="admissions-title">ENTRY REQUIREMENTS FOR JAMAICAN STUDENTS</h1>
 
             <p class="body-text">
-                To be unconditionally admitted into UCC undergraduate programmes, applicants must possess a minimum of 
+                &#9989; To be unconditionally admitted into UCC undergraduate programmes, applicants must possess a minimum of 
                 five (5) subjects at the GCE or CSEC level (including mandatory English Language and Mathematics) 
                 at grades A, B, C or 1, 2, 3 respectively. A CSEC Grade 3 must have been obtained since 1998.
             </p>
