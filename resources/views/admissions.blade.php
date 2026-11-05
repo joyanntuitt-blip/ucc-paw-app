@@ -39,18 +39,18 @@
 
             <p class="body-text">
                 &#9989; To be unconditionally admitted into UCC undergraduate programmes, applicants must possess a minimum of 
-                five (5) subjects at the GCE or CSEC level (including mandatory English Language and Mathematics) 
-                at grades A, B, C or 1, 2, 3 respectively. A CSEC Grade 3 must have been obtained since 1998.
+                <b> five (5) subjects at the GCE or CSEC level (including mandatory English Language and Mathematics) 
+                at grades A, B, C or 1, 2, 3 respectively. </b> A CSEC Grade 3 must have been obtained since 1998.
             </p>
 
             <p class="body-text">
-                Candidates with four (4) CXCs may apply pending outstanding subjects or may opt to complete UCC replacement courses: 
-                Core Mathematics, English for Academic Purposes, and Fundamentals of Accounting.
+                &#9989; Candidates with <b> four (4) CXCs </b> may apply pending outstanding subjects or may opt to complete UCC replacement courses: 
+                <b> Core Mathematics, English for Academic Purposes, and Fundamentals of Accounting. </b>
             </p>
 
             <p class="body-text">
-                Applicants may apply under the Mature Entry option. Candidates must be at least 25 years old with a minimum of 
-                five (5) years of work experience. Academic qualifications, résumé, job letter, and three professional references 
+                &#9989; Applicants may apply under the Mature Entry option. Candidates must be at least 25 years old with a minimum of 
+                <b> five (5) years </b> of work experience. Academic qualifications, résumé, job letter, and three professional references 
                 are required.
             </p>
 
