@@ -16,10 +16,7 @@
     <div class="container">
         <!--Header to display the name of the University-->
         <div class="header">
-            <img src="/images/ucc logo.jpg" alt="UCC Logo" class="header-logo">
-            <br>
-            <br>
-            <h1 class="header-title">UNIVERSITY OF THE COMMONWEALTH CARIBBEAN</h1>
+            <h1>UNIVERSITY OF THE COMMONWEALTH CARIBBEAN</h1>
         </div>
 
 
@@ -37,8 +34,9 @@
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
 
-       <h2 clas=s="info-text">UCC Showcase</h2>
-      <p>Change image every 2 seconds:</p>
+        <br>
+
+       <h2 class="info-text"> <b> UCC Showcase </b></h2>
 
       <div class="slideshow-container">
 
@@ -63,7 +61,51 @@
         <span class="dot"></span> 
       </div>
 
+      <br> 
 
+      <!-- Main Footer Section Container Wrapper -->
+       <footer class="footer">
+
+      <!-- COLUMN 1: Branding & Quick Actions -->
+      <div class="footer-column">
+          <h3>UCC Jamaica</h3>
+          <p><strong>University of the Commonwealth Caribbean</strong></p>
+          <p>Fostering Leadership & Innovation globally.</p>
+      </div>
+
+      <!-- COLUMN 2: Location & Contact Details -->
+      <div class="footer-column">
+          <h3>Main Campus Location</h3>
+          <p>📍 17 Worthington Avenue,<br>Kingston 5, Jamaica W.I.</p>
+          <p><strong>Campus Telephone:</strong><br>1 (876) 906-3000</p>
+
+          <!-- Call Button inside column -->
+          <a href="tel:8769063000" class="btn-call" title="Call Main Campus" > 📞 Call Now </a>
+      </div>
+
+      <!-- COLUMN 3: General Overview -->
+      <div class="footer-column">
+          <h3>Accreditation Status</h3>
+          <p>
+              The University of the Commonwealth Caribbean (UCC) is registered with and recognised by the University Council of Jamaica (UCJ), 
+              the official accreditation body for tertiary education in Jamaica, as a University. The University of the Commonwealth Caribbean 
+              has since achieved institutional accreditation by the UCJ. This positions the UCC as one of only six institutions, of the eighty 
+              public & private tertiary institutions that have been registered by the UCJ, to have achieved this significant & decisive accreditation 
+              status. 
+            </p>
+      </div>
+
+      <!-- COLUMN 4: Institutional Accreditation Info -->
+      <div class="footer-column">
+          <h3>General Overview</h3>
+          <p>
+              UCC is registered with and recognized by the <strong>University Council of Jamaica (UCJ)</strong>, the official accreditation body for tertiary education in Jamaica, as a University. 
+          </p>
+          <p>
+              Positions the UCC as one of only six accredited institutional providers.
+          </p>
+      </div>
+      </footer>
     </div>
     
     <!-- Assignment Target Email Floating Action Button to HOD -->

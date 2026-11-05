@@ -41,26 +41,6 @@ body {
     padding: 0 20px;
 }
 
-h1 {
-    font-family: 'Instrument Sans', Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    color: #faf5f5;
-}
-
-/* Perfect Dead-Centered Text Styling */
-.header-title {
-    font-family: 'Instrument Sans', Arial, sans-serif;
-    color: #ffffff !important;   /* Clean white text override */
-    margin: 0;
-    padding: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
 
 /* Unified Deep Blue Heading Banner */
 .header {
@@ -89,10 +69,20 @@ h1 {
     border-radius: 4px;
 }
 
+/* Section Headings inside Footer */
+.header h1 {
+    color: #f1ed12; /* UCC Yellow for crisp contrast text headers */
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+}
+
 /* Perfect Dead-Centered Text Layout Engine */
 h1 {
     font-family: 'Instrument Sans', Arial, sans-serif;
-    color: #ffffff !important;   /* Clean white text override to stop text bleaching issues */
     margin: 0 !important;        /* Clears out layout height padding drifts */
     padding: 0 !important;
     font-size: 1.15rem;          /* Crisp size alignment matching your branding display image */
@@ -101,6 +91,91 @@ h1 {
     letter-spacing: 0.5px;
     text-align: center;
 }
+
+h3{
+    color: #ffffff; 
+    border: none; 
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   UPDATED RESPONSIVE FOOTER LAYOUT
+   ========================================== */
+.footer {
+    text-align:center;
+    background: #1E3A8A; /* Official UCC Branding Blue */
+    color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Layout Framework: Grid system that automatically handles column space */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+/* Individual Content Columns inside Footer */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Section Headings inside Footer */
+.footer-column h3 {
+    color: #f1ed12; /* UCC Yellow for crisp contrast text headers */
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+/* Footer Body Content Texts */
+.footer-column p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e2e8f0; /* Subtle soft off-white for body legibility */
+}
+
+/* Strong bold highlights */
+.footer-column strong {
+    color: #ffffff;
+}
+
+/* Redesigned Footer Call Button Context */
+.footer .btn-call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #10B981; /* High contrast green */
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 8px;
+    max-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 8px auto 0 auto; /* Automatically calculates equal margins on the left and right to center it */
+    width: 100%; /* Ensures it respects the max-width boundary perfectly */
+}
+
+.footer .btn-call:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+}
+
 
 /* ==========================================
    SLIDESHOW LAYOUT
@@ -201,7 +276,7 @@ img {vertical-align: middle;}
 
 .nav-link.active {
     background-color: transparent !important; /* Removes the dark grey block */
-    color: #1E3A8A !important;
+    color: #2563EB;
     border-bottom: 4px solid #1E3A8A;         /* High-contrast blue underline indicators */
     border-radius: 0px !important;            /* Removes rounded background styling blocks */
 }
@@ -323,11 +398,11 @@ img {vertical-align: middle;}
 }
 
 .email {
-    background-color: #3B82F6; /* Blue Email Button */
+    background-color: #1E3A8A; /* Blue Email Button */
 }
 
 .email:hover {
-    background-color: #2563EB;
+    background-color: #2a51bc;
 }
 
 /* ==========================================
@@ -361,7 +436,7 @@ img {vertical-align: middle;}
 .Apply {
     display: inline-block;
     background-color: #eeee04; 
-    color: #1e3a8a;
+    color: #0a0af2;
     font-weight: bold;
     text-align: center;
     padding: 12px 20px;
@@ -372,8 +447,8 @@ img {vertical-align: middle;}
 }
 
 .Apply:hover {
-    background-color: #eeee04; 
-    color: #f5eddd;
+    background-color: #0a0af2; 
+    color: #eeee04;
 }
 
 /* ==========================================
@@ -425,7 +500,7 @@ img {vertical-align: middle;}
 }
 
 .email-fab:hover {
-    background-color: #d4af37; /* Gold accent on hover */
+    background-color: #eeee04; 
     transform: scale(1.1);
 }
 
