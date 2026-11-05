@@ -35,7 +35,33 @@
     <div class="admissions-grid">
     <!-- Addmissions Card 1 -->
         <div class="admissions-block">
-            <h1 class="admissions-title">ENTRY REQUIREMENTS FOR JAMAICAN STUDENTS</h1>
+            <h1 class="admissions-title"> ENTRY REQUIREMENTS FOR JAMAICAN STUDENTS </h1>
+
+            <p class="body-text"> Degree: Bachelor of Science in Information Technology <br> Creits: 124 <br> Delivery Modality: Blended and 100% Online (via UCC Global) </p>
+
+            <p class=""body-text"> The Bachelor of Science in Information Technology (IT) programme includes a rounded academic curriculum complemented by practical work. 
+            Skills are taught in a context that makes them transferable to the job environment and students demonstrate their readiness by completing projects 
+            that solve real world problems. The content and focus of the programme are constantly informed by current practice in the field 
+            through a participatory approach that includes input from students, faculty, and advisory board. The curriculum reflects what is 
+            pertinent in the information technology industry and is a rigorous course that balances professional competencies and academic abilities.
+            
+            The programme aims to produce graduates who have technical, business and interpersonal knowledge, skills, and competencies to 
+            make significant contributions within the information technology industry nationally, regionally, and globally. </p>
+
+            <h1 class="admissions-title"> PROGRAMME LEARNING GOALS </h1>
+
+            <p class="body-text"> This programme will:
+                &#9989; Equip students with comprehensive technical knowledge and skills in various areas of information technology, enabling them to effectively navigate and contribute to the rapidly changing digital environment.
+                &#9989; Cultivate a culture of innovation and creativity among students, encouraging them to think critically, explore emerging technologies, and propose novel solutions to real-world IT challenges.
+                &#9989; Instill ethical principles and practices in students' approach to information technology, emphasizing the use of technology in both personal and professional contexts.
+                &#9989; Provide opportunities for students to develop strong leadership qualities and effective communication skills, enabling them to lead and collaborate in interdisciplinary teams, manage IT projects, and inspire others in the field of information technology. 
+            </p>
+            
+         </div>
+
+        <!-- Addmissions Card 1 -->
+        <div class="admissions-block">
+            <h1 class="admissions-title"> ENTRY REQUIREMENTS FOR JAMAICAN STUDENTS </h1>
 
             <p class="body-text">
                 &#9989; To be unconditionally admitted into UCC undergraduate programmes, applicants must possess a minimum of 
