@@ -28,11 +28,10 @@
             <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
         </div>
 
-        <p class="body-text">
+        <p class="info-text">
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
+            This directory consists of Deans from the various Schools and Colleges, in addition to, Lecturers from the School of Mathematics, Science and Technology.
         </p>
-
-        <h1> Deans: Schools and Colleges </h1>
 
         <!-- Directory Flex Grid 1 -->
         <div class="directory-grid">
@@ -66,6 +65,7 @@
                     </div>
                 </div>
             </div>
+
 
              <!-- Faculty Member Card 3 -->
             <div class="faculty-member">
@@ -111,19 +111,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <br>
-        <hr>
-
-
-        <h1> School of Mathematics, Science and Technology </h1> 
-
-        <br>
-
-        <!-- Directory Flex Grid 2-->
-        <div class="directory-grid"></div>
-            <!-- Faculty Member Card 1 -->
+            <!-- Faculty Member Card 6 -->
             <div class="faculty-member">
                 <img src="/images/Mr. Otis Osborne.jpg" alt="Otis Osborne" class="faculty-photo">
                 
@@ -138,7 +127,7 @@
                 </div>
             </div>
 
-             <!-- Faculty Member Card 2 -->
+             <!-- Faculty Member Card 7 -->
             <div class="faculty-member">
                 <img src="/images/Dr. Sajjad Rizvi.jpg" alt="Sajjad Rizvi " class="faculty-photo">
                 
@@ -152,8 +141,26 @@
                     </div>
                 </div>
             </div>
+
+             <!-- Faculty Member Card 8 -->
+            <div class="faculty-member">
+                <img src="/images/Mr. Eudurado Anderson.png" alt="Sajjad Rizvi " class="faculty-photo">
+                
+                <div class="info-block">
+                    <p class="info-name"> Mr. Eudurado Anderson </p>
+                    <p class="info-role">Group Chief Information and AI Officer </p>
+                    
+                    <div class="action-group">
+                        <a href="tel:01276543" class="telephone" title="Call Dr. Mr. Eudurado Anderson ">📞 Call Now</a>
+                        <a href="mailto:srizvi@faculty.ucc.edu.jm?subject=Information Technology/AI Enquiry" class="email" title="Email Mr. Eudurado Anderson ">✉️ Email</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Assignment Target Email Floating Action Button to HOD -->
+    <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
 
     @RegisterServiceWorkerScript
 </body>

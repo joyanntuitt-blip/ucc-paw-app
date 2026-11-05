@@ -28,7 +28,7 @@
             <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
         </div>
 
-        <p class="body-text">
+        <p class="info-text">
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
     </div>

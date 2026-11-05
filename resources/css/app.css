@@ -18,13 +18,6 @@ body {
     color: #333;
 }
 
-h1 {
-    font-family: 'Instrument Sans', Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    color: #faf5f5;
-}
 
 /* Styling for body-text */
 .body-text {
@@ -34,31 +27,133 @@ h1 {
     font-size: 1.05rem;
 }
 
+.info-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
 /* Center Wrapper for Sub-Pages */
 .container {
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #faf5f5;
+}
+
+/* Perfect Dead-Centered Text Styling */
+.header-title {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    color: #ffffff !important;   /* Clean white text override */
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
 /* Unified Deep Blue Heading Banner */
 .header {
     background: #1E3A8A; /* Official UCC Branding Blue */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+    padding: 20px;
+    height: 90px;        /* Sets a fixed height profile matching your banner style */
     border-radius: 8px;
     margin-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Flexbox Layout Context */
+    display: flex;
+    align-items: center;     /* Dead-centers content vertically */
+    justify-content: center; /* Dead-centers content horizontally */
+    position: relative;      /* Creates a boundary reference frame for the absolute positioned logo */
+}
+
+/* Floating Left Logo Layout (Pulled out of the text layout flow to ensure perfect centering) */
+.header-logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Keeps logo perfectly centered vertically */
+    height: 55px;                /* Tailored height sizing scaling to your banner image context */
+    width: auto;
+    border-radius: 4px;
+}
+
+/* Perfect Dead-Centered Text Layout Engine */
+h1 {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    color: #ffffff !important;   /* Clean white text override to stop text bleaching issues */
+    margin: 0 !important;        /* Clears out layout height padding drifts */
+    padding: 0 !important;
+    font-size: 1.15rem;          /* Crisp size alignment matching your branding display image */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* ==========================================
+   SLIDESHOW LAYOUT
+   ========================================== */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 
-.header p {
-    margin: 10px 0 0 0;
-    opacity: 0.9;
-    font-size: 1rem;
+.mySlides img {
+  width: 100%;
+  height: 450px;     /* Sets a distinct, structural visual frame aspect ratio */
+  object-fit: cover;  /* Prevents your custom layout graphics from stretching or squishing */
+  vertical-align: middle;
 }
 
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
 /* ==========================================
    DASHBOARD SUB-NAVIGATION ROW LAYOUT
@@ -79,17 +174,25 @@ h1 {
 .nav-link {
     text-decoration: none;
     color: #1E3A8A;
-    padding: 5px 10px;
-    transition: color 0.2s;
+    padding: 8px 16px;          /* Increased padding for a larger click/tap target area */
+    font-size: 1.35rem;         /* Bumps the text size up significantly (was default scale) */
+    font-weight: 700;           /* Makes the font bold so it stands out cleanly */
+    transition: color 0.2s, background-color 0.2s;
+    border-radius: 4px;         /* Adds slight smoothing on hover highlight interaction states */
 }
 
 .nav-link:hover {
     color: #2563EB;
+    background-color: rgba(30, 58, 138, 0.05); /* Adds a subtle dark blue overlay wash on hover */
 }
 
 .nav-link.active {
-    border-bottom: 2px solid #1E3A8A;
+    background-color: transparent !important; /* Removes the dark grey block */
+    color: #1E3A8A !important;
+    border-bottom: 4px solid #1E3A8A;         /* High-contrast blue underline indicators */
+    border-radius: 0px !important;            /* Removes rounded background styling blocks */
 }
+
 
 /* ==========================================
    HOMEPAGE GRID DASHBOARD CARDS
@@ -265,71 +368,23 @@ h1 {
    STYLING FOR IN APP VIEWING 
    ========================================== */
   
-     /* Reset and app layout container */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+/* Container to simulate a mobile app layout on a website */
+        .app-container {
+            width: 100%;
+            max-width: 430px; /* Simulates a standard smartphone width */
+            height: 850px;    /* Simulates phone height */
+            margin: 40px auto;
+            border: 12px solid #333;
+            border-radius: 36px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background: #fff;
         }
-        body, html {
+        /* The embedding frame */
+        .embedded-app {
+            width: 100%;
             height: 100%;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #eef2f3;
-            display: flex;
-            justify-center: center;
-            align-items: center;
-        }
-        /* Web App Shell Container */
-        .phone-wrapper {
-            width: 100vw;
-            height: 100vh;
-            max-width: 414px;  /* Bounds it to mobile size on desktop */
-            max-height: 896px;
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-            position: relative;
-        }
-        /* App Header Bar */
-        .app-header {
-            height: 56px;
-            background-color: #007aff;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        /* Main Viewport Content Area */
-        .app-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-            background-color: #fafafa;
-        }
-        /* App Bottom Navigation Bar */
-        .app-nav {
-            height: 64px;
-            border-top: 1px solid #e5e5ea;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #ffffff;
-        }
-        .nav-item {
-            font-size: 0.8rem;
-            color: #8e8e93;
-            text-decoration: none;
-            text-align: center;
-            flex: 1;
-            padding: 10px 0;
-        }
-        .nav-item.active {
-            color: #007aff;
-            font-weight: 600;
+            border: none;
         }
 
 

@@ -8,17 +8,23 @@
     <!-- Injects your single unified app.css file -->
     @vite(['resources/css/app.css'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
+
+    <script src="resources/js/social-feeds.js" defer></script>
 </head>
 <body>
 
     <!-- Main Content Container -->
     <div class="container">
-
         <!--Header to display the name of the University-->
         <div class="header">
-            <h1> University of the Commonwealth Caribbean </h1>
+            <img src="/images/ucc logo.jpg" alt="UCC Logo" class="header-logo">
+            <br>
+            <br>
+            <h1 class="header-title">UNIVERSITY OF THE COMMONWEALTH CARIBBEAN</h1>
         </div>
-        
+
+
+
         <!-- Dashboard Navigation Row Links -->
         <div class="nav-row">
             <a href="/" class="nav-link active">🏡 Home</a><!--Link to the home page-->
@@ -28,9 +34,42 @@
             <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
         </div>
 
-        <p class="body-text">
+        <p class="info-text">
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
+
+       <h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/images/ucc building.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="/images/ucc grad.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="/images/ucc group.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
     </div>
     
     <!-- Assignment Target Email Floating Action Button to HOD -->
