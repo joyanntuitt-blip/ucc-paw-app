@@ -18,6 +18,15 @@ body {
     color: #333;
 }
 
+h1 {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: #eeee04;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
 /* Styling for body-text */
 .body-text {
     color: #555;
@@ -38,7 +47,6 @@ body {
     background: #1E3A8A; /* Official UCC Branding Blue */
     color: white;
     padding: 30px 20px;
-    font-family: 'Instrument Sans', Arial, sans-serif;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 30px;
