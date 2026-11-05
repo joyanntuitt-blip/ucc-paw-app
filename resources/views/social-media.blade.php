@@ -27,13 +27,7 @@
             <a href="/admissions" class="nav-link">🎓 Admissions</a> <!--Link to the admissions page-->
             <a href="/social-media" class="nav-link active">📱 Social Media</a> <!--Link to the social media page-->
         </div>
-
-        <p class="intro-text">
-            The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
-        </p>
-    </div>
-
-    
+    </div>  
     
     <!-- Assignment Target Email Floating Action Button to HOD -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
