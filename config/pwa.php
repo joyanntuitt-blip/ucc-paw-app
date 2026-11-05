@@ -27,7 +27,7 @@ return [
         'description' => 'Access UCC IT Department resource pathways natively.',
         'icons' => [
             [
-                'src' => '/icon.png', // Keep a standard pointer to avoid validation failure
+                'src' => '/images/ucc logo.jpg', // Keep a standard pointer to avoid validation failure
                 'sizes' => '512x512',
                 'type' => 'image/png',
             ],
