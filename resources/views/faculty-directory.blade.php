@@ -144,7 +144,7 @@
                 
                 <div class="info-block">
                     <p class="info-name">Dr. Sajjad Rizvi </p>
-                    <p class="info-role">Visiting Professor, Department of Information Technologyr </p>
+                    <p class="info-role">Visiting Professor, Department of Information Technology </p>
                     
                     <div class="action-group">
                         <a href="tel:01276543" class="telephone" title="Call Dr. Sajjad Rizvi ">📞 Call Now</a>
