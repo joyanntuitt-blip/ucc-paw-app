@@ -27,7 +27,6 @@
             <a href="/admissions" class="nav-link active">🎓 Admissions</a> <!--Link to the admissions page-->
             <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
         </div>
-    </div>
     
     <br>
 
@@ -99,6 +98,21 @@
         </div>
     </div>
       
+
+    </div>
+
+    <h2 style="text-align: center; color: #333;">Website with Embedded App View</h2>
+
+    <!-- Simulated device frame holding the app -->
+    <div class="app-container">
+        <iframe 
+            src="https://example.com" 
+            class="embedded-app"
+            allow="geolocation; microphone; camera" 
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+         Brass
+        </iframe>
+    </div>
 
     <!-- Assignment Target Email Floating Action Button to HOD -->
     <a href="mailto:hod.it@ucc.edu.jm?subject=Information Technology Enquiry" class="email-fab" title="Quick Email HOD">✉️</a>
