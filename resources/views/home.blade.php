@@ -11,13 +11,13 @@
 </head>
 <body>
 
-    <!--Header to display the name of the University-->
-    <div class="header">
-        <h1>University of the Commonwealth Caribbean</h1>
-    </div>
-
     <!-- Main Content Container -->
     <div class="container">
+
+        <!--Header to display the name of the University-->
+        <div class="header">
+            <h1> University of the Commonwealth Caribbean </h1>
+        </div>
         
         <!-- Dashboard Navigation Row Links -->
         <div class="nav-row">
