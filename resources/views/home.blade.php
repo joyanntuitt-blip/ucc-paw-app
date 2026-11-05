@@ -6,10 +6,9 @@
     <title>Faculty and Staff Members</title>
     
     <!-- Injects your single unified app.css file -->
-    @vite(['resources/css/app.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 
-    <script src="resources/js/social-feeds.js" defer></script>
 </head>
 <body>
 
