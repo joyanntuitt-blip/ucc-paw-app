@@ -37,33 +37,32 @@
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
 
-       <h2>UCC Showcase</h2>
+       <h2 clas=s="info-text">UCC Showcase</h2>
+      <p>Change image every 2 seconds:</p>
 
-<div class="slideshow-container">
+      <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <img src="/images/ucc building.jpg" style="width:100%">
-  <div class="info-text">UCC Campus</div>
-</div>
+      <div class="mySlides fade">
+        <img src="/images/ucc building.jpg" style="width:100%">
+      </div>
 
-<div class="mySlides fade">
-  <img src="/images/ucc grad.jpg" style="width:100%">
-  <div class="text">UCC Graduation</div>
-</div>
+      <div class="mySlides fade">
+        <img src="/images/ucc group.jpg" style="width:100%">
+      </div>
 
-<div class="mySlides fade">
-  <img src="/images/ucc group.jpg" style="width:100%">
-  <div class="text">UCC Group Picture</div>
-</div>
+      <div class="mySlides fade">
+        <img src="/images/ucc grad.jpg" style="width:100%">
+      </div>
 
-</div>
-<br>
+      </div>
+      <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
 
     </div>
     
