@@ -20,11 +20,10 @@ body {
 
 h1 {
     font-family: 'Instrument Sans', Arial, sans-serif;
-    background-color: #eeee04;
     text-align: center;
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #faf5f5;
 }
 
 /* Styling for body-text */
@@ -246,7 +245,7 @@ h1 {
 
 .Apply {
     display: inline-block;
-    background: #eab308; /* UCC Gold Button accent color */
+    background-color: #eeee04; 
     color: #1e3a8a;
     font-weight: bold;
     text-align: center;
@@ -258,7 +257,8 @@ h1 {
 }
 
 .Apply:hover {
-    background: #ca8a04;
+    background-color: #eeee04; 
+    color: #f5eddd;
 }
 
 /* ==========================================
