@@ -54,7 +54,7 @@
                 are required.
             </p>
 
-            <a href="https://www.ucc.edu.jm/apply/undergraduate/preform" class="Apply">Apply Here: Application Form</a>
+            <a href="https://www.ucc.edu.jm/apply/undergraduate/preform" class="Apply" target="_blank" rel="noopener noreferrer"> Apply Here </a>
         </div>
     </div>
 
