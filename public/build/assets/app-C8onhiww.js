@@ -1,1 +1,0 @@
-var e=0;t();function t(){let n,r=document.getElementsByClassName(`mySlides`),i=document.getElementsByClassName(`dot`);for(n=0;n<r.length;n++)r[n].style.display=`none`;for(e++,e>r.length&&(e=1),n=0;n<i.length;n++)i[n].className=i[n].className.replace(` active`,``);r[e-1].style.display=`block`,i[e-1].className+=` active`,setTimeout(t,5e3)}

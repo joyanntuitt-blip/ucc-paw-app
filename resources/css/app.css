@@ -452,6 +452,47 @@ img {vertical-align: middle;}
 }
 
 /* ==========================================
+   STYLING FOR DATABASE IN THE COURSE WEBPAGE 
+   ========================================== */
+.table-container { 
+            overflow-x: auto; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            border-radius: 8px; 
+            background: #fff; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            text-align: left; 
+        }
+        th, td { 
+            padding: 15px; 
+            border-bottom: 1px solid #e0e0e0; 
+        }
+        th { 
+            background-color: #34495e; 
+            color: white; 
+            font-weight: 600; 
+            white-space: nowrap;
+        }
+        tr:hover { 
+            background-color: #f9f9f9; 
+        }
+        .code { 
+            font-family: monospace; 
+            font-weight: bold; 
+            color: #e74c3c; 
+        }
+        .loading { 
+            text-align: center; 
+            padding: 30px; 
+            font-size: 1.2em; 
+            color: #7f8c8d; 
+        }
+
+/* ==========================================
    STYLING FOR IN APP VIEWING 
    ========================================== */
   

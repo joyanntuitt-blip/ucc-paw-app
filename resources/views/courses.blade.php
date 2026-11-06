@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty and Staff Members</title>
+    <title>UCC Courses</title>
     
+
     <!-- Injects your single unified app.css file -->
     @vite(['resources/css/app.css'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 </head>
-<body class="bg-gray-50">
+<body>
 
     <!-- Main Content Container -->
     <div class="container">
@@ -31,6 +32,31 @@
         <p class="info-text">
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
+
+   <h1>DEPARTMENT COURSE CATALOG</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Pre-requisites</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="courseTableBody">
+                <tr>
+                    <td colspan="5" class="loading" id="statusMessage">Loading courses from Firestore...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <!-- THIS LINE IS WHAT TELLS THE PHP PAGE TO LOG IN AND RUN THE FIREBASE EXTRACTION CODE FROM APP.JS -->
+    <script type="module" src="{{ asset('resources/js/app.js') }}"></script>
+
 
          <br> 
 
