@@ -6,8 +6,8 @@
     <title>UCC Courses</title>
     
 
-    <!-- Injects your single unified app.css file -->
-    @vite(['resources/css/app.css'])
+    <!-- FIXED: Links both your stylesheet asset and your database javascript file through the Vite bundler pipeline -->
+    @vite(['resources/css/app.css', 'resources/js/courses.js'])
     @PwaHead <!-- Injects the PWA manifest reference strings automatically -->
 </head>
 <body>
@@ -35,6 +35,25 @@
 
    <h1>DEPARTMENT COURSE CATALOG</h1>
 
+   <!-- Place this right above your <div class="table-container"> element -->
+<div class="filter-controls" style="max-width: 1200px; margin: 20px auto; display: flex; gap: 15px; flex-wrap: wrap;">
+    <input 
+        type="text" 
+        id="courseSearchInput" 
+        placeholder="🔍 Search by course code or name..." 
+        style="flex: 1; min-width: 250px; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;"
+    >
+    <select 
+        id="creditFilterDropdown" 
+        style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; background-color: white; cursor: pointer; min-width: 160px;"
+    >
+        <option value="all">🔢 All Credits</option>
+        <option value="3">3 Credits</option>
+        <option value="4">4 Credits</option>
+    </select>
+</div>
+
+
     <div class="table-container">
         <table>
             <thead>
@@ -54,9 +73,7 @@
         </table>
     </div>
 
-        <!-- THIS LINE IS WHAT TELLS THE PHP PAGE TO LOG IN AND RUN THE FIREBASE EXTRACTION CODE FROM APP.JS -->
-    <script type="module" src="{{ asset('resources/js/app.js') }}"></script>
-
+    
 
          <br> 
 
