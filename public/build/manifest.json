@@ -42,7 +42,6 @@
     "src": "resources/js/app.js",
     "isEntry": true
   },
-  },
   "resources/js/courses.js": {
     "file": "assets/app-C8onhiww.js",
     "name": "app",
