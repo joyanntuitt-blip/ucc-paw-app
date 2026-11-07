@@ -37,13 +37,19 @@
             <a href="/social-media" class="nav-link">📱 Social Media</a> <!--Link to the social media page-->
         </div>
 
-        <p class="info-text">
-            The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
-        </p>
+        <h1> <b> WELCOME TO THE UNIVERISTY OF THE COMMONWELATH CARIBBEAN </b> </h1>
 
         <br>
 
-       <h2 class="info-text"> <b> UCC Showcase </b></h2>
+        <p class="info-text">
+            We are the home to many lecturers and staff with various ranges of skills and expertise in their field areas. <br> <br>
+            Begin your UCC journey with access to our programmes, student support services, upcoming events, professional development opportunities, and the latest updates from our university community. <br>
+        </p>
+
+
+       <h1> <b> DO NOT BE LEFT OUT!</b></h1>
+
+       <br>
 
       <div class="slideshow-container">
 
@@ -55,6 +61,10 @@
         <img src="/images/ucc group.jpg" style="width:100%">
       </div>
 
+       <div class="mySlides fade">
+        <img src="/images/ucc orientation.jpg" style="width:100%">
+      </div>
+
       <div class="mySlides fade">
         <img src="/images/ucc grad.jpg" style="width:100%">
       </div>
@@ -63,6 +73,7 @@
       <br>
 
       <div style="text-align:center">
+        <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 

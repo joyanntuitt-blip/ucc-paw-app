@@ -216,25 +216,6 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -266,6 +247,18 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* ==========================================
+   COURSES LAYOUT
+   ========================================== */
+.filter-controls{
+    max-width: 1200px; 
+    margin: 20px auto; 
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
 
 /* ==========================================
    DASHBOARD SUB-NAVIGATION ROW LAYOUT
@@ -307,75 +300,81 @@ img {vertical-align: middle;}
 
 
 /* ==========================================
-   HOMEPAGE GRID DASHBOARD CARDS
-   ========================================== */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.menu-card {
-    background: white;
-    padding: 35px 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-@media (hover: hover) {
-    .menu-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Places video and feed side-by-side */
-        align-items: start;
-    }
-}
-
-/* ==========================================
    SOCIAL MEDIA GRID STYLING
    ========================================== */
 
+/* Main Grid Layout wrapper container */
+.social-media-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks vertically into a single column by default on mobile devices */
+    gap: 30px; /* Creates clean space between your social blocks */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Updated core layout rules for your dashboard cards */
 .menu-card {
     background: white;
-    padding: 35px 20px;
-    text-align: center;
-    border-radius: 8px;
+    padding: 25px;
+    text-align: center;  /* center align headings for cleaner readability */
+    border-radius: 12px; /* Smoothed card geometry curves */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
+    
+/* Changed layout structure from horizontal 'row' to vertical 'column' */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    flex-direction: column; 
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 15px; /* Spaces the text title away from the top edge of the video */
+    
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+    box-sizing: border-box;
+    overflow: hidden; 
 }
 
-@media (hover: hover) {
-    .menu-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Places video and feed side-by-side */
-        align-items: start;
+/* Hover effects to make cards feel responsive and active */
+.menu-card:hover {
+    transform: translateY(-4px); /* Card lifts up subtly on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Text heading styles inside social cards */
+.menu-card .body-text {
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* FIXED: Prevents iframes from forcing static pixel dimensions and crowding out your layout */
+.menu-card iframe {
+    width: 100% !important; /* Forces the embedded video to adapt to the card's width */
+    max-width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ==========================================
+   DESKTOP OPTIMIZATION MEDIA VIEWPORTS 
+   ========================================== */
+@media (min-width: 768px) {
+    .social-media-grid {
+        /* Arranges elements cleanly side-by-side on tablets and desktop monitors */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
+
+
+
+
+
+
 
 /* ==========================================
    FACULTY DIRECTORY CARDS

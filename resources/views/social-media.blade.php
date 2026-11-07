@@ -31,42 +31,8 @@
         </div>
 
 
-    <!--Embedded Link to UCC Youtube Video -->
-    <div class="menu-card">
-        <p class="body-text"> University of the Commonwealth Caribbean Youtube Channel</p>
-        <iframe width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/r_y2XoQW-Bs?si=9DFhs6x9bKbLzxi-" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; 
-            autoplay; 
-            clipboard-write; 
-            encrypted-media; 
-            gyroscope; 
-            picture-in-picture; 
-            web-share" referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <br>
-
-    <!--Embedded Link to UCC Linkedin Page -->
-    <div class="menu-card">
-        <p class="body-text"> University of the Commonwealth Caribbean Linkedin Page</p>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7521941707542790144" 
-            height="942" 
-            width="504" 
-            frameborder="0" 
-            allowfullscreen="" 
-            title="Embedded post">
-        </iframe> 
-    </div>
-
-    <br>
-
-    <!--Embedded Link to UCC Instagram Page -->
+<div class="social-media-grid">
+      <!--Embedded Link to UCC Instagram Page -->
     <div class="menu-card">
         <p class="body-text"> University of the Commonwealth Caribbean Instagram Page</p>
         <blockquote class="instagram-media" 
@@ -129,22 +95,17 @@
         <script async src="//www.instagram.com/embed.js"></script>
         </div>
 
-    <br>
-
-    <!--Embedded Link to UCC Twitter Page-->
+          <!--Embedded Link to UCC Linkedin Page -->
     <div class="menu-card">
-        <p class="body-text"> University of the Commonwealth Caribbean Twitter Page</p>
-        <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">The UCC Executive Certificate Course in Data Analysis for Supply Chain Management starts on Wednesday, November 11, 2026. Apply today and give your career a boost!
-                Visit our website to read more and apply. https://t.co/hpBcPtn601
-                #UCCJamaica https://t.co/1quzFi9PiK</p>&mdash; 
-                University of the Commonwealth Caribbean (@UCCjamaica) 
-                <a href="https://x.com/UCCjamaica/status/2110385387428323783?ref_src=twsrc%5Etfw"> October 14, 2026</a>
-        </blockquote>
-        <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+        <p class="body-text"> University of the Commonwealth Caribbean Linkedin Page</p>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7521941707542790144" 
+            height="942" 
+            width="504" 
+            frameborder="0" 
+            allowfullscreen="" 
+            title="Embedded post">
+        </iframe> 
     </div>
-
-    <br>
 
     <!--Embedded Link to UCC Facebook Page -->
     <div class="menu-card">
@@ -164,7 +125,41 @@
         </iframe>
     </div>
 
-     <br> 
+    
+    
+ <!--Embedded Link to UCC Twitter Page-->
+    <div class="menu-card">
+        <p class="body-text"> University of the Commonwealth Caribbean Twitter Page</p>
+        <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">The UCC Executive Certificate Course in Data Analysis for Supply Chain Management starts on Wednesday, November 11, 2026. Apply today and give your career a boost!
+                Visit our website to read more and apply. https://t.co/hpBcPtn601
+                #UCCJamaica https://t.co/1quzFi9PiK</p>&mdash; 
+                University of the Commonwealth Caribbean (@UCCjamaica) 
+                <a href="https://x.com/UCCjamaica/status/2110385387428323783?ref_src=twsrc%5Etfw"> October 14, 2026</a>
+        </blockquote>
+        <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+  <!--Embedded Link to UCC Youtube Video -->
+    <div class="menu-card">
+        <p class="body-text"> University of the Commonwealth Caribbean Youtube Channel</p>
+        <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/r_y2XoQW-Bs?si=9DFhs6x9bKbLzxi-" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; 
+            autoplay; 
+            clipboard-write; 
+            encrypted-media; 
+            gyroscope; 
+            picture-in-picture; 
+            web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    </div>
+
 
       <!-- Main Footer Section Container Wrapper -->
        <footer class="footer">

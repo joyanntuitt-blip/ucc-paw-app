@@ -39,10 +39,10 @@
             The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
         </p>
 
-   <h1>DEPARTMENT COURSE CATALOG</h1>
+   <h1> <b> DEPARTMENT COURSE CATALOG </b> </h1>
 
    <!-- Place this right above your <div class="table-container"> element -->
-<div class="filter-controls" style="max-width: 1200px; margin: 20px auto; display: flex; gap: 15px; flex-wrap: wrap;">
+<div class="filter-controls">
     <input 
         type="text" 
         id="courseSearchInput" 
