@@ -377,6 +377,10 @@ input{
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
     box-sizing: border-box;
     overflow: hidden; 
+
+    /* CRITICAL FIX: Enables both horizontal and vertical scrolling inside the card */
+    overflow: auto !important; 
+    -webkit-overflow-scrolling: touch; /* Ensures smooth touch scrolling on mobile safari/iOS devices */
 }
 
 /* Hover effects to make cards feel responsive and active */
