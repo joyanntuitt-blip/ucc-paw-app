@@ -51,6 +51,7 @@ function renderTable(coursesToDisplay) {
         return;
     }
 
+    //Base structure for the information displayed from the database
     coursesToDisplay.forEach((course) => {
         tableBody.innerHTML += `
             <tr>
@@ -84,7 +85,6 @@ function setupFilterListeners() {
                 (course.code && course.code.toLowerCase().includes(searchTerm)) ||
                 (course.name && course.name.toLowerCase().includes(searchTerm));
 
-            // FIXED: Standardized field matching variables to use your database naming strings
             const coursePrereq = course['pre-requisites'] || "None";
             const matchesPrereq = 
                 selectedPrereq === "all" || 
