@@ -36,7 +36,12 @@
         </div>
 
         <p class="info-text">
-            The University of the Commonwealth Caribbean is the home to many lecturers and staff with various ranges of skills and expertise in their field areas.
+            The Bachelor of Science in Information Technology prepares students for diverse careers in technology infrastructure, 
+            network administration, cybersecurity, software development, and IT management. 
+            This programme combines theoretical knowledge with practical skills in hardware, software, networking, and emerging 
+            technologies.
+
+            It also provides students to engage in foundaional courses that can help them start or enchance an entrepreneurial career in Information technology.
         </p>
 
    <h1> <b> DEPARTMENT COURSE CATALOG </b> </h1>
@@ -46,13 +51,12 @@
     <input 
         type="text" 
         id="courseSearchInput" 
-        placeholder="🔍 Search by course code or name..." 
-        style="flex: 1; min-width: 250px; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;"
+        placeholder="🔍 Search by course code, course name or course description..." 
+        
     >
     <select 
-        id="creditFilterDropdown" 
-        style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; background-color: white; cursor: pointer; min-width: 160px;"
-    >
+        id="creditFilterDropdown">
+
         <option value="all">All Pre-requisites</option>
         <option value="None">None</option>
         

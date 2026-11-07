@@ -83,7 +83,9 @@ function setupFilterListeners() {
         const filtered = allCourses.filter(course => {
             const matchesSearch = 
                 (course.code && course.code.toLowerCase().includes(searchTerm)) ||
-                (course.name && course.name.toLowerCase().includes(searchTerm));
+                (course.name && course.name.toLowerCase().includes(searchTerm)) ||
+                (course.description && course.description.toLowerCase().includes(searchTerm)) ;
+
 
             const coursePrereq = course['pre-requisites'] || "None";
             const matchesPrereq = 
