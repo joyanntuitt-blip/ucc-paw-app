@@ -23,7 +23,6 @@ body {
     color: #333;
 }
 
-
 /* Styling for generic body text blocks */
 .body-text {
     color: #555;
@@ -529,6 +528,7 @@ input{
     margin-bottom: 10px;
 }
 
+/*Styling for the apply here button*/
 .Apply {
     display: inline-block;
     background-color: #eeee04; 
