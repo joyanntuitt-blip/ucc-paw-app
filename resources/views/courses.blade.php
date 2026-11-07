@@ -49,8 +49,9 @@
         id="creditFilterDropdown" 
         style="padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; background-color: white; cursor: pointer; min-width: 160px;"
     >
-        <option value="all">🔢 All Credits</option>
-        <option value="3">3 Credits</option>
+        <option value="all">All Pre-requisites</option>
+        <option value="None">None</option>
+        
     </select>
 </div>
 

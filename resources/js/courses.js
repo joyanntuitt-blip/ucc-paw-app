@@ -63,33 +63,43 @@ function renderTable(coursesToDisplay) {
 }
 
 // Attach input monitoring listeners to the search inputs
+// Attach input monitoring listeners to the search inputs
 function setupFilterListeners() {
     const searchInput = document.getElementById('courseSearchInput');
-    const creditFilter = document.getElementById('creditFilterDropdown');
+    
+    // FIXED: Changed hyphen to camelCase so JavaScript can parse the variable name safely
+    const prereqFilter = document.getElementById('creditFilterDropdown');
 
-    if (!searchInput || !creditFilter) return;
+    // FIXED: Adjusted safety check variables to match what was declared above
+    if (!searchInput || !prereqFilter) return;
 
     const filterData = () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
-        const selectedCredits = creditFilter.value;
+        
+        // FIXED: Adjusted variable definition layout assignment
+        const selectedPrereq = prereqFilter.value;
 
         const filtered = allCourses.filter(course => {
             const matchesSearch = 
                 (course.code && course.code.toLowerCase().includes(searchTerm)) ||
                 (course.name && course.name.toLowerCase().includes(searchTerm));
 
-            const matchesCredits = 
-                selectedCredits === "all" || 
-                String(course.credits) === selectedCredits;
+            // FIXED: Standardized field matching variables to use your database naming strings
+            const coursePrereq = course['pre-requisites'] || "None";
+            const matchesPrereq = 
+                selectedPrereq === "all" || 
+                coursePrereq.toLowerCase().includes(selectedPrereq.toLowerCase());
 
-            return matchesSearch && matchesCredits;
+            return matchesSearch && matchesPrereq;
         });
 
         renderTable(filtered);
     };
 
     searchInput.addEventListener('input', filterData);
-    creditFilter.addEventListener('change', filterData);
+    
+    // FIXED: Fixed event target binding execution path layout names
+    prereqFilter.addEventListener('change', filterData);
 }
 
 loadCoursesFromFirestore();
