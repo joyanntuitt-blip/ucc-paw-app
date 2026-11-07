@@ -7,11 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<p> STUDENT NAME: JOYANN E C TUITT
-    AEORION ID: 20226997
-    DEGREE: BSC INFORMATION TECHNOLOGY </p>
-    DATE: NOVEMBER 7 2026
-    
+<p> STUDENT NAME: JOYANN E C TUITT <br>
+    AEORION ID: 20226997 <br>
+    DEGREE: BSC INFORMATION TECHNOLOGY <br>
+    DATE: NOVEMBER 7 2026 <br>    
     I CERTIFY THAT I HAVE NOT GIVEN OR RECEIVED 
     ANY UNAUTHORIZED ASSISTANCE ON THIS ASSIGNMENT </p>
 
