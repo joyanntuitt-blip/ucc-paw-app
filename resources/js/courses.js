@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
+// My exact verified Firebase project keys configuration parameter parameters
 const firebaseConfig = {
     apiKey: "AIzaSyAf4Rz3FDpvarIQ864U2sJQT2MKbuP8EpY",
     authDomain: "://firebaseapp.com",
@@ -12,6 +13,7 @@ const firebaseConfig = {
     measurementId: "G-TWKGDCMKBC"
 };
 
+// Initialize Firebase Core and Database Services
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
@@ -38,7 +40,7 @@ async function loadCoursesFromFirestore() {
     }
 }
 
-// Function to print the records into your HTML grid display
+// Function to print database array fields into my HTML table rows layout grid
 function renderTable(coursesToDisplay) {
     const tableBody = document.getElementById('courseTableBody');
     if (!tableBody) return;
@@ -62,21 +64,19 @@ function renderTable(coursesToDisplay) {
     });
 }
 
-// Attach input monitoring listeners to the search inputs
+
 // Attach input monitoring listeners to the search inputs
 function setupFilterListeners() {
     const searchInput = document.getElementById('courseSearchInput');
-    
-    // FIXED: Changed hyphen to camelCase so JavaScript can parse the variable name safely
     const prereqFilter = document.getElementById('creditFilterDropdown');
 
-    // FIXED: Adjusted safety check variables to match what was declared above
+    // Safety check variables to match what was declared above
     if (!searchInput || !prereqFilter) return;
 
     const filterData = () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
         
-        // FIXED: Adjusted variable definition layout assignment
+        //Variable definition layout assignment
         const selectedPrereq = prereqFilter.value;
 
         const filtered = allCourses.filter(course => {
@@ -97,9 +97,8 @@ function setupFilterListeners() {
     };
 
     searchInput.addEventListener('input', filterData);
-    
-    // FIXED: Fixed event target binding execution path layout names
     prereqFilter.addEventListener('change', filterData);
 }
 
+// Execute database fetch lifecycle query
 loadCoursesFromFirestore();
