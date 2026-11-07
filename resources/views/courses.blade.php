@@ -51,7 +51,6 @@
     >
         <option value="all">🔢 All Credits</option>
         <option value="3">3 Credits</option>
-        <option value="4">4 Credits</option>
     </select>
 </div>
 
