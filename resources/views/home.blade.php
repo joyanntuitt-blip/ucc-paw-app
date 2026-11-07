@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty and Staff Members</title>
+    <title>UCC Home Page</title>
     
     <!-- Injects your single unified app.css file -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -14,10 +14,17 @@
 
     <!-- Main Content Container -->
     <div class="container">
-        <!--Header to display the name of the University-->
-        <div class="header">
-            <h1>UNIVERSITY OF THE COMMONWEALTH CARIBBEAN</h1>
+
+     <!-- Header featuring local logo asset and university title -->
+    <div class="header">
+        <div class="header-content">
+            <!-- Injects your local logo.png file dynamically -->
+            <img src="{{ asset('images/ucc logo.jpg') }}" alt="UCC Logo" class="header-logo">
+            <h1>University of the Commonwealth Caribbean</h1>
         </div>
+    </div>
+
+   
 
 
 

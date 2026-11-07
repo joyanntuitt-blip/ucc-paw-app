@@ -17,10 +17,14 @@
     <!-- Main Content Container -->
     <div class="container">
 
-        <!--Header to display the name of the University-->
-        <div class="header">
-            <h1> University of the Commonwealth Caribbean </h1>
+         <!-- Header featuring local logo asset and university title -->
+    <div class="header">
+        <div class="header-content">
+            <!-- Injects your local logo.png file dynamically -->
+            <img src="{{ asset('images/ucc logo.jpg') }}" alt="UCC Logo" class="header-logo">
+            <h1>University of the Commonwealth Caribbean</h1>
         </div>
+    </div>
         
         <!-- Dashboard Navigation Row Links -->
         <div class="nav-row">

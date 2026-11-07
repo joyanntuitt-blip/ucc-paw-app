@@ -42,43 +42,67 @@ body {
 }
 
 
-/* Unified Deep Blue Heading Banner */
+/* Container Background Banner Bar */
 .header {
-    background: #1E3A8A; /* Official UCC Branding Blue */
-    padding: 20px;
-    height: 90px;        /* Sets a fixed height profile matching your banner style */
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    
-    /* Flexbox Layout Context */
+    background-color: #1a4799; 
+    padding: 15px 25px; /* Added padding to space content cleanly away from the edges */
+    border-radius: 12px; /* Maintains your clean rounded border setup */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* FIXED: Changed alignment parameters to push text cleanly away from the logo */
+.header-content {
     display: flex;
-    align-items: center;     /* Dead-centers content vertically */
-    justify-content: center; /* Dead-centers content horizontally */
-    position: relative;      /* Creates a boundary reference frame for the absolute positioned logo */
+    align-items: center;
+    justify-content: center; /* Centers the unified group on full screen dimensions */
+    gap: 20px; /* Generates a safe space barrier between logo edge and first letter */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Floating Left Logo Layout (Pulled out of the text layout flow to ensure perfect centering) */
+/* FIXED: Standardized image dimensions to prevent scaling issues */
 .header-logo {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%); /* Keeps logo perfectly centered vertically */
-    height: 55px;                /* Tailored height sizing scaling to your banner image context */
-    width: auto;
-    border-radius: 4px;
+    height: 60px; /* Fixes height scale inside the banner framework */
+    width: 60px;  /* Matches height dimension to keep a clean square shape */
+    object-fit: contain;
+    border-radius: 8px; /* Smooths the background square corners */
+    flex-shrink: 0; /* Prevents the logo from shrinking if text space gets tight */
 }
 
-/* Section Headings inside Footer */
+/* Header Text Typography Styles */
 .header h1 {
-    color: #f1ed12; /* UCC Yellow for crisp contrast text headers */
-    font-size: 1.1rem;
-    font-weight: 700;
+    color: #f1db42; 
+    font-size: 1.4rem; /* Balanced size for better readability */
+    font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
     letter-spacing: 0.5px;
-    padding-bottom: 8px;
+    margin: 0;
+    line-height: 1.2;
+     text-align: left; /* Left align text relative to the logo next to it */
 }
+
+/* FIXED: Mobile Screen Breakpoint Optimization (Triggers layout wrapping on tight screens) */
+@media (max-width: 768px) {
+     .header-content {
+        flex-direction: column; /* Stacks the logo neatly above the text on mobile screens */
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.1rem;
+        text-align: center; /* Center aligns the text block on mobile screens */
+    }
+    
+    .header-logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
 
 /* Perfect Dead-Centered Text Layout Engine */
 h1 {
@@ -99,7 +123,7 @@ h3{
 }
 
 /* ==========================================
-   UPDATED RESPONSIVE FOOTER LAYOUT
+   RESPONSIVE FOOTER LAYOUT
    ========================================== */
 .footer {
     text-align:center;
