@@ -1,4 +1,8 @@
-/* filepath: resources/js/course-catalog.js */
+/* ==========================================
+      STYLING FOR THE COURSES DATABASE
+   ========================================== */
+
+// filepath: resources/js/course.js 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
@@ -64,7 +68,6 @@ function renderTable(coursesToDisplay) {
         `;
     });
 }
-
 
 // Attach input monitoring listeners to the search inputs
 function setupFilterListeners() {

@@ -1,5 +1,5 @@
 /* ==========================================
-   STYLING FOR SLIDESHOW
+    STYLING FOR SLIDESHOW ON THE HOME PAGE
    ========================================== */
 
 let slideIndex = 0;
